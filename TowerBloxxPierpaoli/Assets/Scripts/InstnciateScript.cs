@@ -3,12 +3,12 @@ using System.Collections;
 
 public class InstnciateScript : MonoBehaviour
 {
-    public Transform spawPoint;
+    public Transform spawnPoint;
+    public GameObject cyllinder;
 
     // Reference to the Prefab. Drag a Prefab into this field in the Inspector.
-    public GameObject myPrefab; 
-
-    // This script will simply instantiate the Prefab when the game starts.
+    public GameObject myPrefab;
+  
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -19,12 +19,9 @@ public class InstnciateScript : MonoBehaviour
     }
 
     private void Spawn()
-    {       
-        // Instantiate at position (0, 0, 0) and zero rotation.
-        Instantiate(myPrefab, spawPoint.position , Quaternion.identity);
-            
-        myPrefab.GetComponent<MeshRenderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-        
+    {
+        GameObject instatiated = Instantiate(myPrefab, spawnPoint.position, Quaternion.identity); ;
+        instatiated.GetComponent<MeshRenderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);        
 
     }
 
