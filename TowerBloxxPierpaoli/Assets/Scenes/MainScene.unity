@@ -363,6 +363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 071f3c589a77e584a8a6b1193cd55f15, type: 3}
+--- !u!23 &1020202495 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 071f3c589a77e584a8a6b1193cd55f15, type: 3}
+  m_PrefabInstance: {fileID: 1020202494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584770697
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +461,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1846047798}
   - component: {fileID: 1846047797}
+  - component: {fileID: 1846047800}
+  - component: {fileID: 1846047799}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -476,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 864511798}
-  cyllinder: {fileID: 0}
+  cyllinder: {fileID: 2020905939}
   myPrefab: {fileID: 2027477192}
 --- !u!4 &1846047798
 Transform:
@@ -492,6 +499,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846047799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846047796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce1cce787d37254f9734cef2e757c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1846047800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846047796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff780a00b25c214087a39b3489b227e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1584770700}
+  mr: {fileID: 1020202495}
 --- !u!1 &1933485566
 GameObject:
   m_ObjectHideFlags: 0
